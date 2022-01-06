@@ -1,3 +1,10 @@
+import requests
+import json
+import pandas as pd
+import numpy as np
+from bs4 import BeautifulSoup as soup
+from urllib.request import Request, urlopen
+
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36'}
 
 def getFintel(ticker):
